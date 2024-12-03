@@ -1,0 +1,235 @@
+    // variables
+
+
+    $primary: #BD8951 !important;
+    $secondary: #1E3A58 !important;
+    $ternary: #1E3A58 !important;
+    $white: #fff;
+
+
+  
+
+
+    @font-face {
+        font-family: "FMBolyarPro";
+        src: url('../fonts/FMBolyarPro-100.ttf');
+    }
+
+
+    @font-face {
+        font-family: "FMBolyarPro-bold";
+        src: url('../fonts/FMBolyarPro-900.ttf');
+    }
+
+   * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "FMBolyarPro";
+    }
+
+    .main-menu{
+        li{
+            a{
+                color: #fff;
+                display: inline-block; 
+                font-family: "FMBolyarPro";
+                font-weight: 400;
+                font-size: 1.6667em;
+                line-height: 1.8;
+                &:hover{
+                    color: $primary ;
+                }
+            }
+        }
+    }
+
+
+
+    .text-justify {
+        text-align: justify;
+    }
+
+    .taylor-bold {
+        font-family: "taylor-bold";
+        font-weight: 700;
+    }
+
+    .bg-light-theme {
+        background: #E6E6E6;
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    // needable  classes 
+
+    .txt-primary {
+        color: $primary ;
+    }
+
+    .txt-secondary {
+        color: $secondary;
+    }
+
+    .txt-ternary {
+        color: $ternary;
+    }
+
+    .font-essai {
+        font-family: "Essai";
+    }
+
+    .bg-primary-theme {
+        background: $primary;
+    }
+
+    .bg-secondary {
+        background: $secondary;
+    }
+
+    .bg-ternary {
+        background: $ternary;
+    }
+
+    .theme-para {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+
+    body {
+        font-family: "taylor-light";
+
+    }
+ 
+ 
+ 
+
+    .btn-submit {
+        padding: 11px;
+        border-radius: 42px;
+        color: #640813 !important;
+        text-align: center;
+        display: inline-block;
+        border: 0;
+        width: 151px;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-family: 'essai';
+    }
+
+    .btn-submit:hover {
+        background: #870c1b !important;
+        color: #fff !important;
+    }
+
+  
+
+    .list-icon {
+        li {
+            list-style-image: url(../images/checkmark.png);
+
+            span {
+                position: relative;
+                top: -6px;
+                color: $primary;
+                font-weight: bold;
+            }
+        }
+    }
+
+    //   navbar css
+
+    .site-header {
+        background: $primary;
+        border-bottom: 2px solid $white;
+
+        .navbar-brand {
+            img {
+                @media(max-width:375px) {
+                    width: 200px;
+                }
+            }
+        }
+
+        .navCustom {
+            .nav-item {
+                .nav-link {
+                    margin-right: 0;
+                    font-size: 20px;
+                    color: $white !important;
+                    padding: 8px 18px;
+                    margin: 0 2px;
+                    text-transform: uppercase;
+                    font-family: "taylor-light";
+                    border-radius: 5px;
+
+                    @media(max-width:1024px) {
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        font-weight: bold;
+                        color: $white;
+                    }
+
+                    &.active {
+                        color: $primary;
+                        font-weight: bold;
+                        background-color: $white;
+
+                    }
+                }
+
+                .dropdown-item {
+                    &:hover {
+                        background-color: $primary ;
+                        color: $white;
+                    }
+
+                    &.active {
+                        background-color: $primary;
+                        color: $white;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+ .bg-theme{
+    background: $primary;
+    font-weight: bold;
+ }
+
+ .btn-theme{
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    background: $primary;
+    font-weight: 700;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    border-radius: 25px;
+    display: inline-block;
+ }
+
+ .btn-close {
+    box-sizing: content-box;
+    width: 2em;
+    height: 2em;
+    padding: .25em .25em;
+    color: #ffffff;
+    background: #b2722c;
+    border: 0;
+    border-radius: 0;
+    opacity: 1;
+    color: #fff;
+}
