@@ -12,6 +12,15 @@
 }
 .menu-font {
   font-family: "Montserrat-Regular";
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.main-right-menu {
+  background: #252525;
+}
+.main-right-menu:hover button {
+  background: #252525 !important;
 }
 
 * {
@@ -30,7 +39,7 @@
   line-height: 1.8;
 }
 .main-menu li a:hover {
-  color: #BD8951 !important;
+  color: #C1996F !important;
 }
 
 .text-justify {
@@ -51,7 +60,7 @@ a {
 }
 
 .txt-primary {
-  color: #BD8951 !important;
+  color: #C1996F !important;
 }
 
 .txt-secondary {
@@ -67,7 +76,7 @@ a {
 }
 
 .bg-primary-theme {
-  background: #BD8951 !important;
+  background: #C1996F !important;
 }
 
 .bg-secondary {
@@ -111,7 +120,7 @@ body {
 .list-icon li span {
   position: relative;
   top: -6px;
-  color: #BD8951 !important;
+  color: #C1996F !important;
   font-weight: bold;
 }
 
@@ -143,21 +152,21 @@ body {
   color: #fff;
 }
 .site-header .navCustom .nav-item .nav-link.active {
-  color: #BD8951 !important;
+  color: #C1996F !important;
   font-weight: bold;
   background-color: #fff;
 }
 .site-header .navCustom .nav-item .dropdown-item:hover {
-  background-color: #BD8951 !important;
+  background-color: #C1996F !important;
   color: #fff;
 }
 .site-header .navCustom .nav-item .dropdown-item.active {
-  background-color: #BD8951 !important;
+  background-color: #C1996F !important;
   color: #fff;
 }
 
 .bg-theme {
-  background: #BD8951 !important;
+  background: #C1996F !important;
   font-weight: bold;
 }
 
@@ -167,7 +176,7 @@ body {
   text-transform: uppercase;
   padding: 15px 40px;
   letter-spacing: 1px;
-  background: #BD8951 !important;
+  background: #C1996F !important;
   font-weight: 700;
   border-radius: 25px;
   display: inline-block;
@@ -175,13 +184,17 @@ body {
 
 .btn-close {
   box-sizing: content-box;
-  width: 2em;
-  height: 2em;
+  width: 3em;
+  height: 3em;
   padding: 0.25em 0.25em;
   color: #ffffff;
-  background: #b2722c;
+  background: #C1996F !important;
   border: 0;
   border-radius: 0;
-  opacity: 1;
+  opacity: 1 !important;
   color: #fff;
+}
+
+.btn-close:hover iconify-icon {
+  color: #474747 !important;
 }/*# sourceMappingURL=app.css.map */

@@ -1,13 +1,13 @@
     // variables
 
 
-    $primary: #BD8951 !important;
+    $primary: #C1996F !important;
     $secondary: #1E3A58 !important;
     $ternary: #1E3A58 !important;
     $white: #fff;
 
 
-  
+
 
 
     @font-face {
@@ -26,27 +26,38 @@
         src: url('../fonts/Montserrat-Regular.ttf');
     }
 
-    .menu-font{
+    .menu-font {
         font-family: "Montserrat-Regular";
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .main-right-menu{
+        background: #252525;
+        &:hover{
+            button{
+                background : #252525!important;
+            }
+        }
     }
 
-   * {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: "FMBolyarPro";
     }
 
-    .main-menu{
-        li{
-            a{
+    .main-menu {
+        li {
+            a {
                 color: #fff;
-                display: inline-block; 
+                display: inline-block;
                 font-family: "FMBolyarPro";
                 font-weight: 400;
                 font-size: 1.6667em;
                 line-height: 1.8;
-                &:hover{
+
+                &:hover {
                     color: $primary ;
                 }
             }
@@ -113,9 +124,9 @@
         font-family: "taylor-light";
 
     }
- 
- 
- 
+
+
+
 
     .btn-submit {
         padding: 11px;
@@ -135,7 +146,7 @@
         color: #fff !important;
     }
 
-  
+
 
     .list-icon {
         li {
@@ -153,7 +164,7 @@
     //   navbar css
 
     .site-header {
-        background: #000; 
+        background: #000;
 
         .navbar-brand {
             img {
@@ -209,35 +220,39 @@
         }
     }
 
- .bg-theme{
-    background: $primary;
-    font-weight: bold;
- }
+    .bg-theme {
+        background: $primary;
+        font-weight: bold;
+    }
 
- .btn-theme{
-    font-size: 13px;
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    padding: 15px 40px;
-    letter-spacing: 1px;
-    background: $primary;
-    font-weight: 700;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    border-radius: 25px;
-    display: inline-block;
- }
+    .btn-theme {
+        font-size: 13px;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        padding: 15px 40px;
+        letter-spacing: 1px;
+        background: $primary;
+        font-weight: 700;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        border-radius: 25px;
+        display: inline-block;
+    }
 
- .btn-close {
-    box-sizing: content-box;
-    width: 2em;
-    height: 2em;
-    padding: .25em .25em;
-    color: #ffffff;
-    background: #b2722c;
-    border: 0;
-    border-radius: 0;
-    opacity: 1;
-    color: #fff;
-}
+    .btn-close {
+        box-sizing: content-box;
+        width: 3em;
+        height: 3em;
+        padding: .25em .25em;
+        color: #ffffff;
+        background: $primary;
+        border: 0;
+        border-radius: 0;
+        opacity: 1!important;
+        color: #fff;
+    }
+
+    .btn-close:hover iconify-icon { 
+        color: #474747!important; 
+    }
